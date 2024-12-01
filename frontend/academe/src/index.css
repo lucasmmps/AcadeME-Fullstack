@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --softWhite: #F0F2F5;
+    --softGray: #565656;
+    --lightGray: #94A2B7;
+    --softBlue: #006ACB;
+    --darkBlue: #003465;
+    --lightBlue: #2C9AFF;
+}
