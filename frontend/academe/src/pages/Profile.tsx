@@ -24,14 +24,14 @@ const Profile: React.FC = () => {
 
             <div className="profiles-layout">
    {/* Sidebar do perfil */}
-<aside className="profile-sidebar flex flex-col justify-between justify-content: space-between bg-gradient-to-r from-[#006ACB] to-[#01519c]">
+<aside className="profile-sidebar flex flex-col justify-between justify-content: space-between bg-gradient-to-b from-[#003465] to-[#006ACB]">
   <div className="profile-header">
     <img 
       src={UserIcon}
       alt="Foto de perfil" 
       className="profile-image border-2 border-softWhite p-2 min-h-80 min-w-80 mt-6"
     />
-    <h1 className="profile-name font-extrabold mt-8">Mikhael Canarinho Nóbrega</h1>
+    <h1 className="profile-name font-extrabold mt-10 mb-6">Mikhael Canarinho Nóbrega</h1>
     
     {/* Barra de separação */}
     <div className="separator" style={{ borderBottom: '1px solid white', margin: '10px 0' }} />
