@@ -1,3 +1,11 @@
+import express from 'express';
+
+router.get('/', (req, res) => {
+  res.send('Hello World!');
+})
+
+export default router;
+
 // routes/user.js
 const express = require('express');
 const User = require('../models/user');

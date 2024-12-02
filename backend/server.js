@@ -1,10 +1,23 @@
+import express from 'express';
+import bodyParser from 'body-parser';
+import mongoose from 'mongoose';
+import cors from 'cors';
+
+import usersRoutes from './routes/users.js';
+
+
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
+
+
 const app = express();
+
+app.use('/users', usersRoutes)
 
 // Conexão com o MongoDB
 const CONNECTION_URL = 'mongodb+srv://Academe:Academe@academe.j9opv.mongodb.net/?retryWrites=true&w=majority&appName=AcadeMe';
@@ -18,6 +31,7 @@ mongoose.connect(CONNECTION_URL)
 // Middleware
 app.use(cors());
 app.use(bodyParser.json()); // Para receber JSON no corpo da requisição
+
 
 // Definição do modelo de Usuário
 const userSchema = new mongoose.Schema({
