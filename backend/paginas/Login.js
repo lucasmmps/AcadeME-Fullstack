@@ -2,6 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
@@ -9,7 +10,7 @@ const port = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Conectando ao banco de dados MongoDB
-mongoose.connect('mongodb://127.0.0.1:27017/Academe', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://Academe:Academe@academe.j9opv.mongodb.net/?retryWrites=true&w=majority&appName=AcadeMe', { useNewUrlParser: true, useUnifiedTopology: true });
 const conexao = mongoose.connection;
 
 conexao.on('error', console.error.bind(console, 'Erro de conexão com o MongoDB:'));
