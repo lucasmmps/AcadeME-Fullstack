@@ -16,13 +16,12 @@ const handleEditReferences = () => {
 const Upload: React.FC = () => {
   return (
     <div className="upload-container">
-      {/* Substitua a barra de cabeçalho pela Navbar */}
       <Navbar /> 
       {/* Main Content */}
       <main className="upload-main">
         {/* Project Details */}
         <section className="project-details ">
-    <img src={logoQueima} alt="QueimaFIT Logo" className="project-logo"/>
+    <img src={logoQueima} alt="QueimaFIT Logo" className="project-logo mr-60 ml-40"/>
     <div className="project-info">
         <h1>QueimaFIT</h1>
         <p className="project-meta">
