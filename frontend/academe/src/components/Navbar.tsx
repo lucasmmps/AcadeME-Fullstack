@@ -13,25 +13,15 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="flex justify-between items-center p-4 bg-darkBlue text-white">
+    <nav className="flex justify-between items-center p-4 bg-gradient-to-r from-[#003465] to-[#003465] text-white">
       <Link to="/" className="text-xl">AcadeMe</Link> {/* Link para a página inicial */}
-      
-      <div className="flex items-center"> {/* Contêiner flexível para a barra de pesquisa e o botão */}
-        <TextBar placeholder='Procurar Perfil...' style={{ width: '300px' }} /> {/* Aumentando a largura */}
-        <button
-          onClick={handleSearch}
-          className="ml-2 bg-lightBlue text-softWhite rounded-full px-4 py-2 hover:bg-darkBlue transition duration-300 flex items-center"
-        >
-          <FaSearch className="text-lg" /> {/* Ícone de busca */}
-        </button>
-      </div>
 
-      <div className='button-container flex gap-1'>
+      <div className='button-container flex gap-1 items-center'> {/* Adicionado items-center aqui */}
         <Link to="/signup"> {/* Link para a página de Cadastro */}
-          <Button shape='pill' buttonStyle='default' className="ml-2 px-4 py-2 text-softWhite">Cadastro</Button>
+          <Button shape='pill' buttonStyle='default' className="ml-2 px-4 py-2 text-softWhite mb-2">Cadastro</Button>
         </Link>
         <Link to="/login"> {/* Link para a página de Login */}
-          <Button shape='pill' buttonStyle='light' className="ml-2 px-4 py-2 text-softWhite">Login</Button>
+          <Button shape='pill' buttonStyle='light' className="ml-2 px-4 py-2 text-softWhite mb-2">Login</Button>
         </Link>
       </div>
     </nav>
