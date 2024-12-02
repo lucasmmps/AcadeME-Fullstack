@@ -1,12 +1,3 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
-import cors from 'cors';
-
-import usersRoutes from './routes/users.js';
-
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
