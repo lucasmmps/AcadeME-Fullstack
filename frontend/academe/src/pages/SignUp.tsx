@@ -41,7 +41,7 @@ const SignUp: React.FC = () => {
 
         try {
             // Faz a requisição POST para o backend
-            const response = await fetch('https://academe-fullstack.onrender.com', {
+            const response = await fetch('https://academe-fullstack.onrender.com/api/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
