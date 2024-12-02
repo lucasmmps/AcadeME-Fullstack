@@ -9,7 +9,7 @@ export default router;
 // routes/user.js
 const express = require('express');
 const User = require('../models/user');
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcryptjs')
 const router = express.Router();
 
 // Criar um novo usuário (Rota de Cadastro)

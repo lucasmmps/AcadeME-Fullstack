@@ -1,14 +1,10 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-
-
 const app = express();
-
-app.use('/users', usersRoutes)
 
 // Conexão com o MongoDB
 const CONNECTION_URL = 'mongodb+srv://Academe:Academe@academe.j9opv.mongodb.net/?retryWrites=true&w=majority&appName=AcadeMe';
