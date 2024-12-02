@@ -27,13 +27,7 @@ const userSchema = new mongoose.Schema({
     password: String,
 });
 
-const User = mongoose.model('User', userSchema);
-
-// Rota de Cadastro
-app.get('/api/test', (req, res) => {
-  res.json({ message: 'Test endpoint working!' });
-});
-
+// Criar um novo usuário (Rota de Cadastro)
 app.post('/api/users', async (req, res) => {
   const { name, phone, email, password } = req.body;
 
@@ -67,3 +61,5 @@ app.post('/api/users', async (req, res) => {
       res.status(500).json({ message: 'Erro ao cadastrar usuário.', error: error.message }); // Envia a mensagem de erro
   }
 });
+
+const User = mongoose.model('User', userSchema);
